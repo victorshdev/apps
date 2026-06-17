@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitScreen — Privacy Policy</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #10b981;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f5;
+        --muted: #a0a0a0;
+        --accent: #34d399;
+        --border: #2a2a2a;
+        --bg: #0a0a0a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      letter-spacing: -0.5px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    p, li { color: var(--text); }
+    ul {
+      padding-left: 22px;
+    }
+    li { margin-bottom: 6px; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .callout {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FitScreen Privacy Policy</h1>
+  <p class="meta">Last updated: June 17, 2026</p>
+</header>
+
+<p>
+  FitScreen is an iOS app that helps you take back control of your phone by
+  locking your distracting apps until you've earned screen time through
+  walking. We built FitScreen to be a tool for you, not a product that
+  monetizes your data. This document explains exactly what we do and don't do
+  with information from your device.
+</p>
+
+<div class="callout">
+  <strong>Short version.</strong> Your step count, calorie burn, and chosen
+  apps stay on your device. We do not sell, rent, or share your personal
+  information. We use a small amount of anonymous analytics to understand
+  which screens convert, nothing that identifies you.
+</div>
+
+<h2>1. Information that stays on your device only</h2>
+
+<p>
+  The following information is read on your device and never leaves it. We
+  cannot see it, nor can our servers receive it.
+</p>
+
+<ul>
+  <li>
+    <strong>Health data</strong> (step count, active energy) — read from
+    Apple HealthKit only to calculate how much screen time you've earned.
+    Stored only in iOS HealthKit and in FitScreen's local cache on your device.
+  </li>
+  <li>
+    <strong>Selected apps and categories</strong> — when you choose which
+    apps to lock, FitScreen receives an opaque
+    <em>FamilyActivitySelection</em> token from Apple's Screen Time API.
+    These tokens are anonymous (we cannot tell which apps you picked from
+    looking at the token), they are stored only locally, and Apple does not
+    let any app — including FitScreen — read what's behind them.
+  </li>
+  <li>
+    <strong>Usage time of selected apps</strong> — Apple's DeviceActivity
+    extension reports how long you've spent in the apps you chose to lock.
+    This counter lives in your device's app group storage. We do not receive
+    it on any server.
+  </li>
+</ul>
+
+<h2>2. Information used for purchases and subscriptions</h2>
+
+<p>
+  FitScreen offers an in-app subscription. To process and validate purchases
+  we rely on two services:
+</p>
+
+<ul>
+  <li>
+    <strong>Apple App Store</strong> handles the actual payment. We never see
+    your card details, your name on the card, or your billing address. Apple's
+    privacy policy governs that flow.
+  </li>
+  <li>
+    <strong>RevenueCat</strong> (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>)
+    validates the App Store receipt and tells the app whether your
+    subscription is active. RevenueCat receives an anonymous app-user ID
+    that we generate, the product you bought, and the receipt from Apple. It
+    does not receive your Apple ID, your name or your email.
+  </li>
+</ul>
+
+<h2>3. Anonymous analytics</h2>
+
+<p>
+  We use <strong>Mixpanel</strong>
+  (<a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">Mixpanel Privacy Policy</a>)
+  to count product events — for example, how many people complete onboarding,
+  how many open the paywall, which plan is selected. These events:
+</p>
+
+<ul>
+  <li>are not linked to your real identity;</li>
+  <li>contain only an anonymous device ID generated by us;</li>
+  <li>never include your health data, your selected apps, or your subscription
+    payment details.</li>
+</ul>
+
+<p>
+  We do not offer an in-app opt-out for analytics at this time, because the
+  events we collect are anonymous and necessary to keep improving the product
+  for everyone. If you'd like your anonymous analytics record removed,
+  uninstall the app — that stops all event collection from your device — and,
+  if you'd like the historical record purged from Mixpanel, email us at the
+  address below.
+</p>
+
+<h2>4. Health & fitness data — special protections</h2>
+
+<p>
+  As required by Apple, we want to be explicit about how we treat health and
+  fitness data:
+</p>
+
+<ul>
+  <li>We do <strong>not</strong> use health data for advertising or marketing.</li>
+  <li>We do <strong>not</strong> share, sell, or rent health data to any
+    third party.</li>
+  <li>We do <strong>not</strong> transfer health data to brokers, data
+    aggregators, or research databases.</li>
+  <li>We do <strong>not</strong> store health data on any server we control.</li>
+</ul>
+
+<h2>5. We do not sell or share your information</h2>
+
+<p>
+  FitScreen has no business model that depends on selling user data. We do
+  not sell or share personal information with advertisers, data brokers, or
+  any third parties beyond the service providers listed above (Apple,
+  RevenueCat, Mixpanel), each used strictly to operate the product.
+</p>
+
+<h2>6. Your rights</h2>
+
+<ul>
+  <li>
+    <strong>Delete your data.</strong> Uninstalling FitScreen removes all
+    local data from your device. To delete the anonymous analytics record on
+    Mixpanel, email us at the address below and include the request to delete
+    your anonymous user ID.
+  </li>
+  <li>
+    <strong>Revoke permissions.</strong> You can withdraw HealthKit or Screen
+    Time access at any time in iOS Settings → Privacy & Security. FitScreen
+    will stop reading those data sources immediately.
+  </li>
+  <li>
+    <strong>Cancel subscription.</strong> In Settings → Apple ID →
+    Subscriptions, or via the in-app "Manage Subscription" button.
+  </li>
+</ul>
+
+<h2>7. Children's privacy</h2>
+
+<p>
+  FitScreen is rated 4+ in the App Store but is designed for an adult or
+  teenage audience deciding to limit their own screen time. We do not
+  knowingly collect personal information from children under 13. If you
+  believe a child under 13 has used the app, contact us and we will delete
+  any related analytics record.
+</p>
+
+<h2>8. Data retention</h2>
+
+<ul>
+  <li><strong>On-device data</strong> — for as long as the app is installed.</li>
+  <li><strong>Subscription receipts (RevenueCat)</strong> — kept for the
+    lifetime of the subscription plus the period Apple/RevenueCat require for
+    receipt validation and refunds.</li>
+  <li><strong>Analytics events (Mixpanel)</strong> — retained for 12 months
+    then automatically purged.</li>
+</ul>
+
+<h2>9. International users</h2>
+
+<p>
+  RevenueCat and Mixpanel may process data on servers located in the United
+  States. By using FitScreen you understand that the limited data described
+  above may be processed outside your country of residence.
+</p>
+
+<h2>10. Changes to this policy</h2>
+
+<p>
+  If we change how we handle your data, we'll update this page and bump the
+  "Last updated" date at the top. Significant changes that affect data
+  collection will also be announced in the app.
+</p>
+
+<h2>11. Contact</h2>
+
+<p>
+  Questions about this policy or your data:
+  <a href="mailto:victor.sh.dev@gmail.com">victor.sh.dev@gmail.com</a>.
+</p>
+
+<footer>
+  © 2026 FitScreen. App Store, HealthKit, Screen Time, Family Controls and
+  DeviceActivity are trademarks of Apple Inc. RevenueCat and Mixpanel are
+  trademarks of their respective owners.
+</footer>
+
+</body>
+</html>
