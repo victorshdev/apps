@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bytely — Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #2f2a24, #0e0d0b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .app-icon svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .app-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1d1d1f;
+    }
+
+    .app-subtitle {
+      font-size: 14px;
+      color: #6e6e73;
+      margin-top: 2px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      color: #1d1d1f;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: #6e6e73;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 6px;
+      color: #1d1d1f;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      color: #1d1d1f;
+    }
+
+    p {
+      font-size: 15px;
+      color: #3a3a3c;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 8px 0 12px 20px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #3a3a3c;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #0f9d63;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e5e5ea;
+      margin: 40px 0;
+    }
+
+    .callout {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 24px;
+      border: 1px solid #e5e5ea;
+      border-left: 3px solid #ff5a45;
+      margin: 16px 0;
+    }
+
+    .callout p:last-child { margin-bottom: 0; }
+
+    .contact-block {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e5e5ea;
+      margin-top: 16px;
+    }
+
+    .contact-block p {
+      margin: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #000; color: #f5f5f7; }
+      .app-name { color: #f5f5f7; }
+      h1, h2, h3 { color: #f5f5f7; }
+      p, ul li { color: #aeaeb2; }
+      .contact-block, .callout {
+        background: #1c1c1e;
+        border-color: #38383a;
+      }
+      .callout { border-left-color: #ff5a45; }
+      .divider { background: #38383a; }
+      .updated, .app-subtitle { color: #aeaeb2; }
+      a { color: #4fd394; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="app-header">
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="4" width="12" height="16" rx="2.5" fill="#ff5a45" opacity="0.35"/>
+          <rect x="6" y="4" width="12" height="16" rx="2.5" fill="#f2eee7" opacity="0.28"/>
+          <rect x="9" y="4" width="12" height="16" rx="2.5" fill="#4fd394"/>
+          <path d="M12.5 12.5l2 2 3.5-4" stroke="#0e0d0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="app-name">Bytely</div>
+        <div class="app-subtitle">Swipe to clean up photos</div>
+      </div>
+    </div>
+
+    <h1>Support</h1>
+    <p class="updated">Clean up your photo library by swiping</p>
+
+    <p>Bytely shows your photos one at a time, whole and full screen. Swipe left to delete, right to keep, up to favorite, down to decide later. It finds duplicates and near-identical shots for you, and nothing is deleted until you confirm.</p>
+
+    <h2>Frequently asked</h2>
+
+    <h3>I deleted photos but my iPhone storage did not change</h3>
+    <p>Two reasons, and both are how iOS works. First, deleted photos sit in <strong>Recently Deleted</strong> in the Photos app for 30 days. Open Photos → Recently Deleted → Delete All to get the space back right away.</p>
+    <p>Second, if <em>Optimize iPhone Storage</em> is on in Settings → Photos, your originals live in iCloud and your iPhone only keeps compressed copies. Deleting then frees space in iCloud rather than on the device.</p>
+
+    <h3>Can I undo a swipe?</h3>
+    <p>Yes. Every decision can be undone, and nothing leaves your library until you confirm the delete queue.</p>
+
+    <h3>How do I restore a deleted photo?</h3>
+    <p>Photos app → Albums → Recently Deleted. Photos stay recoverable there for 30 days.</p>
+
+    <h3>What does Bytely Pro include?</h3>
+    <p>The free version deletes up to 1 GB per day. Pro removes that daily limit. Manage or cancel a subscription in iOS Settings → your name → Subscriptions.</p>
+
+    <h3>Are my photos uploaded anywhere?</h3>
+    <p>No. Everything happens on your iPhone, including duplicate detection. There are no accounts, no servers, and no analytics.</p>
+
+    <div class="divider"></div>
+
+    <h2>Contact</h2>
+    <p>Questions, bugs, or ideas — write to us and we will answer.</p>
+    <div class="contact-block">
+      <p>📧 <a href="mailto:iam@victorsh.dev">iam@victorsh.dev</a></p>
+    </div>
+
+    <p style="margin-top:32px"><a href="privacy/">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms/">Terms of Use</a></p>
+
+  </div>
+</body>
+</html>
